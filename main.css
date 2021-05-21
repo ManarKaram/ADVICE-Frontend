@@ -140,3 +140,100 @@ header .container .engine .search-box .tab-content .tab-pane .search {
     border: none;
     margin-top: 27px;
 }
+/* page content */
+.appointment {
+    font-family: 'Cairo', sans-serif;
+    margin-top: 100px;
+}
+.appointment h2 {
+    font-size: 32px;
+    color: #F5AA4B;
+}
+.appointment .more {
+    display: flex;
+    justify-content: space-between;
+}
+.appointment .more p{
+    color: #0071B7;
+    font-size: 24px;
+}
+.appointment .more button {
+    color: #374053;
+    border: 1px solid #F5AA4B;
+    padding: 0px 25px;
+    background-color: #fff;
+    border-radius: 8px;
+    font-weight: 700;
+    height: 36px;
+}
+.container-scroll {
+    overflow-x: auto;
+    /* background-color: var(--dark-grey); */
+}
+.container-scroll > .row {
+    /* width: 110%; */
+}
+.appointment .carousel {
+    display: flex;
+    justify-content: space-between;
+}
+.appointment .carousel .item .image {
+    width: 220px;
+    height: auto;
+    position: relative;
+}
+.appointment .carousel .item .image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.appointment .carousel .item .title {
+    color: #0071B7;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 700;
+}
+.appointment .carousel .item .info {
+    color: #3B4358;
+    font-size: 18px;
+}
+.appointment .carousel .item .image .image-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #3B4358;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+.appointment .carousel .item .image .image-overlay:hover{
+    opacity: 1;
+}
+.appointment .carousel .item .image .image-overlay > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+.appointment .carousel .item .image .image-overlay:hover >* {
+    transform: translateY(0px);
+}
+.appointment .carousel .item .image .image-overlay button {
+    background-color: #fff;
+    border: none;
+    color: #F5AA4B;
+    font-size: 14px;
+    border-radius: 8px;
+    display: flex;
+    width: 120px;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0;
+}
+.appointment .carousel .item .image .image-overlay button .image-overlay-container {
+    margin-left: 10px;
+}
