@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+}
+header {
+    background-image: url('./images/header.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 710px;
+    width: 100%;
+    font-family: 'Cairo', sans-serif;
+}
+header .container nav {
+    padding-top: 40px;
+    justify-content: space-between;
+}
+header nav .logo {
+    color: #FFFFFF;
+    font-size: 32px;
+    font-weight: 400;
+    opacity: 0.94;
+}
+header .container nav .options {
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-end;
+}
+header .container nav .options .notification {
+    margin-left: 10px;
+}
+header .container nav .options .user {
+    margin-left: 18px;
+}
+header .container nav .options .list ul{
+    list-style: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 0;
+}
+header .container nav .options .list ul li {
+    display: inline-block;
+    margin-left: 9px;
+}
