@@ -35,12 +35,73 @@
                     </div>
                 </div>
             </nav>
+            <div class="engine">
+                <h1>رعاية صحية لحياة أفضل ليك</h1>
+                <p>رعاية صحية لحياة أفضل ليك رعاية صحية لحياة أفضل ليك رعاية صحية لحياة أفضل ليك</p>
+                <div class="search-box">
+                    <ul class="nav nav-tabs" id="myTab">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="reserve-tab" data-bs-toggle="tab"
+                                data-bs-target="#reserve" type="button" aria-controls="reserve"
+                                aria-selected="true">احجز دكتور</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="ask-tab" data-bs-toggle="tab" data-bs-target="#ask"
+                                type="button" aria-controls="ask" aria-selected="false">استشر طبيبك</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="order-tab" data-bs-toggle="tab" data-bs-target="#order"
+                                type="button" aria-controls="order" aria-selected="false">اطلب دوائك</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="reserve" aria-divledby="reserve-tab">
+                            <div class="input">
+                                <div class="label">التخصص</div>
+                                <select required>
+                                    <option value="" disabled selected hidden>اخترالتخصص</option>
+                                    <option>option 1</option>
+                                    <option>option 2</option>
+                                    <option>option 3</option>
+                                </select>
+                            </div>
+                            <div class="input">
+                                <div class="label">المحافظة</div>
+                                <select required>
+                                    <option value="" disabled selected hidden>اخترالمحافظة</option>
+                                    <option>option 1</option>
+                                    <option>option 2</option>
+                                    <option>option 3</option>
+                                </select>
+                            </div>
+                            <div class="input">
+                                <div class="label">المنطقة</div>
+                                <select required>
+                                    <option value="" disabled selected hidden>اخترالمنطقة</option>
+                                    <option>option 1</option>
+                                    <option>option 2</option>
+                                    <option>option 3</option>
+                                </select>
+                            </div>
+                            <div class="input">
+                                <div class="label">اسم الطبيب</div>
+                                <input placeholder="ادخل اسم الطبيب او المستشفى">
+                            </div>
+                            <button class="search"></button>
+                        </div>
+                        <div class="tab-pane fade" id="ask" aria-divledby="ask-tab">second content</div>
+                        <div class="tab-pane fade" id="order" aria-divledby="order-tab">third content</div>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </header>
 
 
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

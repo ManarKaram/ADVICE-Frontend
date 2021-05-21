@@ -1,3 +1,4 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap'); */
 * {
     margin: 0;
     box-sizing: border-box;
@@ -12,6 +13,7 @@ header {
     height: 710px;
     width: 100%;
     font-family: 'Cairo', sans-serif;
+    position: relative;
 }
 header .container nav {
     padding-top: 40px;
@@ -43,4 +45,98 @@ header .container nav .options .list ul{
 header .container nav .options .list ul li {
     display: inline-block;
     margin-left: 9px;
+}
+/* engine section */
+header .container .engine {
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+header .container .engine  h1{
+    font-size: 40px;
+    color: #fff;
+}
+header .container .engine p {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 40px;
+}
+header .container .engine .search-box {
+    width: 80%;
+    height: auto;
+    background-color: #fff;
+    margin: auto;
+    border-radius: 5px;
+}
+header .container .engine .search-box ul li button,
+header .container .engine .search-box ul {
+    border: none;
+}
+header .container .engine .search-box ul {
+    padding: 0;
+}
+header .container .engine .search-box ul li {
+    width: calc(100%/3);
+    height: 70px;
+    position: relative;
+}
+header .container .engine .search-box ul li button {
+    font-size: 20px;
+    margin: auto;
+    width: 100%;
+    background-color: #F4F5F8;
+    color: #0071B7;
+    font-weight: 700;
+    padding: 12px 0;
+    border-radius: 0;
+    height: 100%;
+}
+header .container .engine .search-box ul li button.active {
+    background-color: #F5AA4B;
+    color: #FFFFFF;
+    position: relative;
+    height: 78px;
+    top: -8px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+header .container .engine .search-box .tab-content .tab-pane.active {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+    height: 200px;
+}
+header .container .engine .search-box .tab-content .tab-pane .input {
+    display: block;
+    text-align: right;
+}
+header .container .engine .search-box .tab-content .tab-pane .input .label {
+    font-size: 18px;
+    color: #0071B7;
+}
+header .container .engine .search-box .tab-content .tab-pane .input input,
+header .container .engine .search-box .tab-content .tab-pane .input select {
+    width: 230px;
+    height: 35px;
+    border: 1px solid #E4E5E6;
+}
+header .container .engine .search-box .tab-content .tab-pane .input input::placeholder,
+header .container .engine .search-box .tab-content .tab-pane .input select:required:invalid {
+    color: #707789;
+    font-size: 14px;
+}
+header .container .engine .search-box .tab-content .tab-pane .search {
+    background-image: url('./images/search-icon.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 50px;
+    height: 35px;
+    border: none;
+    margin-top: 27px;
 }
