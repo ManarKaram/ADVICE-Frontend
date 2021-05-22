@@ -26,6 +26,10 @@ header nav .logo {
     font-size: 32px;
     font-weight: 700;
     opacity: 0.94;
+    transition: transform 0.5s;
+}
+header nav .logo:hover {
+    transform: translateY(-10px);
 }
 header .container nav .options {
     display: flex;
