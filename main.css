@@ -573,6 +573,19 @@ footer .links .social .company .orange {
         font-size: 12px;
         width: 50%;
     }
+    /* clicic section */
+    .appointment .clinic-item {
+        width: 100%;
+    }
+    .appointment .clinic-item .image-container {
+        width: 70px;
+    }
+    .appointment .clinic-item .data .title {
+        font-size: 18px;
+    }
+    .appointment .clinic-item .data .info {
+        font-size: 14px;
+    }
     /* footer section */
     footer {
         height: auto;
