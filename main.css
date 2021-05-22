@@ -6,6 +6,14 @@
 body {
     font-family: 'Cairo', sans-serif;
 }
+a {
+    text-decoration: none;
+    color: unset;
+}
+a:hover {
+    text-decoration: none;
+    color: unset;
+}
 header {
     background-image: url('./images/header.png');
     background-position: center;

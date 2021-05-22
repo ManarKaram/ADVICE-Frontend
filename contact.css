@@ -6,6 +6,14 @@
 body {
     font-family: 'Cairo', sans-serif;
 }
+a {
+    text-decoration: none;
+    color: unset;
+}
+a:hover {
+    text-decoration: none;
+    color: unset;
+}
 header {
     margin-bottom: 80px;
 }
@@ -43,7 +51,7 @@ header .container nav .options .list ul li {
 }
 /* section info */
 section.info {
-    min-height: 700px;
+    height: 700px;
     background-color: #F4F5F8;
     border-radius: 8px;
     display: flex;
