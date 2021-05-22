@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 body {
+    font-family: 'Cairo', sans-serif;
 }
 header {
     background-image: url('./images/header.png');
@@ -142,7 +143,6 @@ header .container .engine .search-box .tab-content .tab-pane .search {
 }
 /* page content */
 .appointment {
-    font-family: 'Cairo', sans-serif;
     margin-top: 150px;
 }
 .appointment h2 {
@@ -239,7 +239,6 @@ header .container .engine .search-box .tab-content .tab-pane .search {
 }
 /* doctors section */
 .doctors {
-    font-family: 'Cairo', sans-serif;
     margin-top: 150px;
     color: #fff;
 }
@@ -389,4 +388,68 @@ header .container .engine .search-box .tab-content .tab-pane .search {
 }
 .apps .data .links a:nth-of-type(1) {
     margin-left: 10px;
+}
+/* footer */
+footer {
+    margin-top: 150px;
+    background: transparent linear-gradient(180deg, #0071B7 0%, #0971B1 55%, #002840 100%) 0% 0% no-repeat padding-box;
+    height: 430px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+footer .logo {
+    font-size: 32px;
+    font-weight: 700;
+}
+footer .links {
+    display: flex;
+    justify-content: space-between;
+
+}
+footer .links > div .title {
+    font-size: 24px;
+    margin-bottom: 14px;
+}
+footer .links ul {
+    list-style: none;
+    text-align: right;
+    padding: 0;
+}
+footer .links ul li {
+    font-size: 16px;
+    color: #F4F5F8;
+    line-height: 30px;
+    margin-bottom: 12px;
+}
+footer .links .social {
+    margin: auto 0;
+}
+footer .links .social .media-links  {
+    display: flex;
+    margin-bottom: 20px;
+}
+footer .links .social .media-links .icon-container {
+    background-image: url('./images/Path\ 33011.png');
+    background-position: center;
+    background-size: cover;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 8px;
+}
+footer .links .social .media-links .icon-container a {
+    text-decoration: none;
+}
+footer .links .social .media-links .icon-container a i {
+    padding: 5px;
+    color: #fff;
+}
+footer .links .social .company > span{
+    margin-left: 8px;
+}
+footer .links .social .company .orange {
+    color: #F5AA4B;
 }
