@@ -23,7 +23,7 @@ header .container nav {
 header nav .logo {
     color: #FFFFFF;
     font-size: 32px;
-    font-weight: 400;
+    font-weight: 700;
     opacity: 0.94;
 }
 header .container nav .options {
@@ -46,6 +46,7 @@ header .container nav .options .list ul{
 header .container nav .options .list ul li {
     display: inline-block;
     margin-left: 9px;
+    opacity: 0.94;
 }
 /* engine section */
 header .container .engine {
