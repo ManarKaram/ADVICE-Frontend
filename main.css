@@ -453,3 +453,49 @@ footer .links .social .company > span{
 footer .links .social .company .orange {
     color: #F5AA4B;
 }
+/* start media queries */
+@media(min-width: 320px) and (max-width: 640px) {
+    header{
+        height: 870px;
+    }
+    header .container .engine {
+        bottom: 35px;
+    }
+    header .container .engine .search-box .tab-content .tab-pane.active  {
+        display: block;
+        height: auto;
+    }
+    header .container nav {
+        text-align: center;
+    }
+    header .container nav .options {
+        display: block;
+    }
+    header .container nav .options .notification,
+    header .container nav .options .user {
+        margin:auto;
+        margin-bottom: 5px;
+    }
+    header .container .engine h1 {
+        font-size: 35px;
+    }
+    header .container .engine p {
+        font-size: 16px;
+    }
+    header .container .engine .search-box ul li button {
+        font-size: 16px;
+        height: 65px;
+        padding: 5px;
+        
+    }
+    header .container .engine .search-box ul li button.active {
+        top: -12px;
+    }
+    header .container .engine .search-box .tab-content .tab-pane .input .label {
+        font-size: 16px;
+    }
+    header .container .engine .search-box .tab-content .tab-pane .input {
+        margin-bottom: 10px;
+    }
+}
+/* end media queries */
