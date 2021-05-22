@@ -161,21 +161,30 @@ header .container .engine .search-box .tab-content .tab-pane .search {
     color: #374053;
     border: 1px solid #F5AA4B;
     padding: 0px 25px;
+    font-size: 13px;
     background-color: #fff;
     border-radius: 8px;
     font-weight: 700;
     height: 36px;
 }
-.container-scroll {
+/* .container-scroll {
     overflow-x: auto;
-    /* background-color: var(--dark-grey); */
 }
 .container-scroll > .row {
-    /* width: 110%; */
+    width: 133.33333333%;
 }
+.container-scroll > .row:nth-of-type(1){
+    width: 133.33333333%;
+} */
 .appointment .carousel {
     display: flex;
     justify-content: space-between;
+    overflow: auto;
+    white-space: nowrap;
+    overflow-y: clip;
+}
+.appointment .carousel .item {
+    margin: 0 10px;
 }
 .appointment .carousel .item .image {
     width: 220px;
@@ -455,6 +464,7 @@ footer .links .social .company .orange {
 }
 /* start media queries */
 @media(min-width: 320px) and (max-width: 640px) {
+    /* header section */
     header{
         height: 870px;
     }
@@ -482,6 +492,9 @@ footer .links .social .company .orange {
     header .container .engine p {
         font-size: 16px;
     }
+    header .container nav .options .list ul {
+        font-size: 14px;
+    }
     header .container .engine .search-box ul li button {
         font-size: 16px;
         height: 65px;
@@ -496,6 +509,47 @@ footer .links .social .company .orange {
     }
     header .container .engine .search-box .tab-content .tab-pane .input {
         margin-bottom: 10px;
+    }
+    header .container .engine .search-box .tab-content .tab-pane .input input, 
+    header .container .engine .search-box .tab-content .tab-pane .input select{
+        width: 100%;
+    }
+    header .container .engine .search-box .tab-content .tab-pane .search {
+        margin: 10px auto;
+    }
+    /* appointment section */
+    .appointment {
+        margin-top: 100px;
+        text-align: center;
+    }
+    .appointment h2 {
+        font-size: 28px;
+    }
+    .appointment .more {
+        display: block;
+        margin-bottom: 10px;
+    }
+    .appointment .more p{
+        font-size: 18px;
+    }
+    .appointment .carousel .item .image {
+        width: 180px;
+    }
+    .appointment .carousel .item .title {
+        font-size: 16px;
+    }
+    .appointment .carousel .item .info {
+        font-size: 14px;
+    }
+    /* footer section */
+    footer {
+        height: auto;
+    }
+    footer .row {
+        text-align: center;
+    }
+    footer .links  {
+        display: block;
     }
 }
 /* end media queries */
