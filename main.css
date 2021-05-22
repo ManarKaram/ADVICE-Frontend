@@ -1,4 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
 * {
     margin: 0;
     box-sizing: border-box;
@@ -143,7 +143,7 @@ header .container .engine .search-box .tab-content .tab-pane .search {
 /* page content */
 .appointment {
     font-family: 'Cairo', sans-serif;
-    margin-top: 100px;
+    margin-top: 150px;
 }
 .appointment h2 {
     font-size: 32px;
@@ -240,7 +240,7 @@ header .container .engine .search-box .tab-content .tab-pane .search {
 /* doctors section */
 .doctors {
     font-family: 'Cairo', sans-serif;
-    margin-top: 100px;
+    margin-top: 150px;
     color: #fff;
 }
 .doctors .item {
@@ -268,6 +268,7 @@ header .container .engine .search-box .tab-content .tab-pane .search {
 }
 .doctors .item p {
     font-size: 22px;
+    width: 70%;
 }
 .doctors button {
     border: none;
@@ -277,4 +278,115 @@ header .container .engine .search-box .tab-content .tab-pane .search {
     width: 160px;
     font-weight: 700;
     padding: 6px 0;
+}
+/* clinics section */
+.appointment .clinic-item {
+    display: flex;
+    align-items: center;
+    background-color: #F4F5F8;
+    width: calc(96%/4);
+    margin: 0 5px;
+    border-radius: 8px;
+    padding: 15px 20px;
+}
+.appointment .clinic-item .image-container {
+    margin-left: 30px;
+    max-width: 40px;
+    max-height: 60px;
+   
+}
+.appointment .clinic-item .image-container img {
+    width: 100%;
+    height: 100%;
+}
+.appointment .clinic-item .data .title {
+    color: #3B4358;
+    font-size: 24px;
+}
+.appointment .clinic-item .data .info {
+    color: #F5AA4B;
+    font-size: 16px;
+}
+/* community section */
+.community {
+    margin-top: 150px;
+    text-align: center;
+}
+.community h1 {
+    color: #F5AA4B;
+    font-size: 52px;
+    font-weight: 700;
+    margin-bottom: 100px;
+}
+.community .services {
+    display: flex;
+}
+.community .services .item .image {
+    width: 50px;
+    height: 50px;
+    background-color: #F4F5F8;
+    margin: auto;
+    border-radius: 50%;
+    margin-bottom: 18px;
+}
+.community .services .item .data .title {
+    color: #0071B7;
+    font-size: 24px;
+    font-weight: 700;
+}
+.community .services .item .data .info {
+    color: #3B4358;
+    font-size: 18px;
+}
+/* apps section */
+.apps {
+    margin-top: 180px;
+    background-color: #F4F5F8;
+    height: 500px;
+    position: relative;
+}
+.apps .image {
+    position: absolute;
+}
+.apps .image.app-image2 {
+    bottom: 100px;
+    left: 150px;
+}
+.apps .image.app-image1 {
+    left: 305px;
+    bottom: 125px;
+}
+.apps .data {
+    position: absolute;
+    width: 40%;
+    top: 22%;
+    bottom: 0;
+    right: 100px;
+}
+.apps .data h2 {
+    color: #0071B7;
+    font-size: 32px;
+    font-weight: 700;
+}
+.apps .data p {
+    color: #3B4358;
+    font-size: 24px;
+    margin-bottom: 50px;
+    font-weight: 400;
+}
+.apps .data .links a{
+    text-decoration: none;
+    width: 150px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #0071B7;
+    font-weight: 700;
+}
+.apps .data .links a img {
+    margin-right: 8px;
+}
+.apps .data .links a:nth-of-type(1) {
+    margin-left: 10px;
 }
