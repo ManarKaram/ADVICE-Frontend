@@ -76,14 +76,14 @@ section.form {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* padding: 0 40px; */
-    padding: 0;
+    padding: 80px 0;
     margin: 0 20px;
 }
 section.form .title {
     color: #0071B7;
     font-size: 32px;
     font-weight: 700;
+    margin-bottom: 50px;
 }
 section.form form {
     width: 100%;
@@ -109,7 +109,7 @@ section.form .input .label {
     color: #3B4358;
     margin-bottom: 6px;
 }
-section.form .input input,
+section.form .input input[type="text"],
 section.form .input select {
     width: 100%;
     border: 1px solid #E4E5E6;
@@ -133,11 +133,15 @@ section.form .input.half select,
 section.form .input.half input {
     padding-left: 20px;
 }
+section.form .input.half .cube {
+    width: calc(95%/3);
+    display: inline-block;
+}
 section.form .input select:required:invalid {
     color: #707789;
     font-size: 16px;
 }
-section.form .input button {
+section.form .input button{
     position: absolute;
     border: none;
     background: none;
@@ -156,9 +160,72 @@ section.form .sec2 .input .location img {
     width: 100%;
     height: 100%;
 }
+section.form .input.choice {
+    margin-top: 60px;
+}
+section.form .input.choice .label {
+    margin-bottom: 20px;
+
+}
+section.form .input.choice .radio{
+    margin-bottom: 25px;
+}
+section.form .input input[type="radio"] {
+    display: none;
+}
+
+section.form .input input[type="radio"] + *::before {
+    content: "";
+    display: inline-block;
+    vertical-align: bottom;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: 1px solid #3B4358;
+    margin-left: 20px;
+    cursor: pointer;
+}
+section.form .input input[type="radio"]:checked + *::before {
+    background: radial-gradient(#3B4358 0%, #3B4358 40%, transparent 50%, transparent);
+    border-color: #3B4358;
+}
+section.form .input span {
+    font-size: 20px;
+    color: #3B4358;
+}
+section.form .next {
+    text-align: center;
+    margin-top: 80px;
+}
+section.form .next button,
+.deliver button  {
+    background-color: #0071B7;
+    border: none;
+    border-radius: 8px;
+    width: 170px;
+    height: 50px;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 700;
+}
+/* deliver section */
+.deliver {
+    background-color: #EBEBEB;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    margin-top: 200px;
+    text-align: center;
+}
+.deliver p {
+    font-size: 32px;
+    color: #3B4358;
+    margin-bottom: 60px;
+}
 /* footer */
 footer {
-    margin-top: 150px;
     background: transparent linear-gradient(180deg, #0071B7 0%, #0971B1 55%, #002840 100%) 0% 0% no-repeat padding-box;
     height: 430px;
     color: #fff;
@@ -238,6 +305,18 @@ footer .links .social .company .orange {
         margin:auto;
         margin-bottom: 5px;
     }
+    /* sections */
+    section.info,
+    section.form {
+        margin: 0 auto;
+        text-align: center;
+    }
+    section.form {
+        margin-top: 100px;
+    }
+    section.form .input.half {
+        width: 100%;
+    }
      /* footer section */
      footer {
         height: auto;
@@ -273,8 +352,17 @@ footer .links .social .company .orange {
     footer .logo {
         font-size: 28px;
     }
+    section.form .input.choice {
+        text-align: right;
+    }
 }
 @media(min-width: 740px) and (max-width:991px){ 
+    section.form {
+        margin-top: 100px;
+    }
+    section.form .input.choice {
+        text-align: right;
+    }
     header .container nav {
         text-align: center;
         display: block;
