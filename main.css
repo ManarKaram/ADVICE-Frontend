@@ -428,6 +428,10 @@ footer .links {
     justify-content: space-between;
 
 }
+footer .links > div {
+   margin: 0 10px;
+
+}
 footer .links > div .title {
     font-size: 24px;
     margin-bottom: 14px;
