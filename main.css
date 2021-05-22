@@ -792,9 +792,6 @@ body ::-webkit-scrollbar-thumb {
     .appointment .clinic-item {
         width: 100%;
     }
-    /* .appointment .clinic-item .image-container {
-        width: 70px;
-    } */
     .appointment .clinic-item .data .title {
         font-size: 20px;
     }
