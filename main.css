@@ -586,6 +586,52 @@ footer .links .social .company .orange {
     .appointment .clinic-item .data .info {
         font-size: 14px;
     }
+    /* community */
+    .community h1 {
+        font-size: 45px;
+        margin-bottom: 50px;
+    }
+    .community .services .item {
+        margin-bottom: 20px;
+    }
+    /* app section */
+    .apps .image {
+        width: 100px;
+        
+    }
+    .apps .image img {
+        object-fit: contain;
+    }
+    .apps .image.app-image1 {
+        left: 35%;
+        top: -40px;
+        bottom: auto;
+    }
+    .apps .image.app-image2 {
+        left: 15%;
+        top: -60%;
+    }
+    .apps .image img {
+        width: 100%;
+        height: 100%;
+    }
+    .apps .data {
+        width: 90%;
+        left: auto;
+        right: auto;
+        top: auto;
+        bottom: 10%;
+    }
+    .apps .data h2 {
+        font-size: 28px;
+    }
+    .apps .data p {
+        font-size: 18px;
+    }
+    .apps .data .links a {
+       padding: 10px;
+       font-size: 12px;
+    }
     /* footer section */
     footer {
         height: auto;
