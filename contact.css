@@ -1,10 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap');
 * {
     margin: 0;
     box-sizing: border-box;
 }
 body {
     font-family: 'Cairo', sans-serif;
+}
+header {
+    margin-bottom: 80px;
 }
 header .container nav {
     padding-top: 40px;
@@ -40,7 +43,7 @@ header .container nav .options .list ul li {
 }
 /* section info */
 section.info {
-    height: 700px;
+    min-height: 700px;
     background-color: #F4F5F8;
     border-radius: 8px;
     display: flex;
@@ -48,6 +51,7 @@ section.info {
     justify-content: center;
     align-items: center;
     padding: 0 40px;
+    margin: 0 20px;
 }
 section.info h1 {
     font-size: 20px;
@@ -62,6 +66,95 @@ section.info .notes .item {
 section.info .notes .item .data {
     font-size: 16px;
     color: #475A76;
+}
+/* form section */
+section.form {
+    min-height: 700px;
+    background-color: #F4F5F8;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 0 40px; */
+    padding: 0;
+    margin: 0 20px;
+}
+section.form .title {
+    color: #0071B7;
+    font-size: 32px;
+    font-weight: 700;
+}
+section.form form {
+    width: 100%;
+}
+section.form .sec1,
+section.form .sec2 {
+    width: 100%;
+    padding: 0 40px;
+}
+section.form .line {
+    border-bottom: 1px solid #E4E5E6;
+    width: 100%;
+    padding: 0;
+    margin: 40px 0;
+}
+section.form .input {
+    margin-bottom: 28px;
+    position: relative;
+}
+section.form .input .label {
+    font-size: 18px;
+    font-weight: 700;
+    color: #3B4358;
+    margin-bottom: 6px;
+}
+section.form .input input,
+section.form .input select {
+    width: 100%;
+    border: 1px solid #E4E5E6;
+    height: 60px;
+    font-size: 16px;
+    border-radius: 1px;
+    color: #707789;
+    padding-right: 20px;
+   
+}
+section.form .input select {
+    -webkit-appearance: none;
+    background: url('./images/down-arrow.png') no-repeat left #FFFFFF;
+    background-position-x: 20px;
+}
+section.form .input.half{
+    width: calc(99%/2);
+    display: inline-block;
+}
+section.form .input.half select,
+section.form .input.half input {
+    padding-left: 20px;
+}
+section.form .input select:required:invalid {
+    color: #707789;
+    font-size: 16px;
+}
+section.form .input button {
+    position: absolute;
+    border: none;
+    background: none;
+    font-size: 12px;
+    font-weight: 600;
+    left: 25px;
+    top: 52px;
+}
+section.form .sec2 .input .location {
+    position: absolute;
+    width: 30px;
+    left: 26px;
+    top: 48px;
+}
+section.form .sec2 .input .location img {
+    width: 100%;
+    height: 100%;
 }
 /* footer */
 footer {
